@@ -671,6 +671,14 @@
         </div>
     </footer>
 </div>
+<script>
+  //----------本番公開時は外す----------
+  const password = prompt("パスワードを入力してください");
 
+  if (password !== "testtest") {
+    document.body.innerHTML = "<h1>アクセスできません</h1>";
+  }
+  /////////////////////////////////////////
+</script>
 </body>
 </html>
